@@ -2,12 +2,15 @@
   font-family: Helvetica;
   font-size:22px;
   color:seashell;
-  background-color:black;
   opacity: 0.9;
-  text-align: center;
+  margin:0px;
+  padding: 0px;
+  background-color: black;
 
+}
 
-
+body{
+  background-color: black;
 }
 
 header {
@@ -20,6 +23,12 @@ header {
   align-items: center;
   z-index: 1;
   justify-content: space-between;
+  color:black;
+}
+
+header h2 span {
+  color: black;
+}
 
 }
 .logo{
@@ -34,17 +43,16 @@ header {
 .main-content{
   display:flex;
   flex-direction: column;
-  width:100% ;
   padding-top: 100px;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+
 }
+
 
 
 .main-content h2 {
   font-size: 60px;
-  margin: 0 auto;
+
 }
 
  .mission   {
@@ -54,7 +62,7 @@ header {
    display:flex;
    flex-direction: column;
    text-align: center;
-   width: 100%;
+   width: 1200px;
    height: 700px;
    justify-content: center;
 
@@ -74,20 +82,18 @@ header {
   margin: 0 auto;
 }
 
-.tea-of-the-month h2 {
+.tom-heading {
   text-align: center;
-  font size:40px;
+  font size:100px;
   margin: 0 auto;
 }
 
 .items {
-  width:10%;
+  width:100%;
   display:flex;
-  align-items: center;
+  align-items: space-around;
   justify-content: space-around;
-  margin: 0 auto;
-
-}
+  margin: 0 auto;}
 
 
 .items img{
@@ -99,3 +105,61 @@ header {
     margin: 0 auto;
 
  }
+
+
+ .locations {
+ margin-top: 100px;
+ display:flex;
+ justify-content: ;
+ background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ width: 1200px;
+ height:500px;
+ flex-direction:column ;
+ align-items: center;
+ align-content: center ;
+ text-align: center;
+}
+
+.locations h2  {
+  background-color: none;
+}
+
+.addresses {
+  display:inline-flex;
+  width:;
+  height:500px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+
+}
+
+
+.downtown {
+  width:300px;
+  height: 300px;
+  margin: 40px;
+
+
+}
+
+
+.eastbayside {
+  width:300px;
+  height: 300px;
+  margin: 40px;
+
+
+}
+
+.oakdale {
+  width:300px;
+  height: 300px;
+  margin: 40px;
+
+
+
+}
