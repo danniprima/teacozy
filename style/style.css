@@ -2,11 +2,14 @@
   font-family: Helvetica;
   font-size:22px;
   color:seashell;
-  opacity: 0.9;
   margin:0px;
   padding: 0px;
 
 
+}
+
+h2 {
+  font-size: 40px;
 }
 
 body{
@@ -24,11 +27,10 @@ header {
   z-index: 1;
   justify-content: space-between;
   background-color:black;
+  opacity: 0.9;
 }
 
-header h2 span {
-  background-color: black;
-}
+
 
 }
 .logo{
@@ -40,6 +42,11 @@ header h2 span {
    padding-left: 50px;
 }
 
+ .mission {
+   background-color: black;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
 .main-content{
   display:flex;
   flex-direction: column;
@@ -51,7 +58,7 @@ header h2 span {
 
 
 
-.main-content h2 {
+.mission h2 {
   font-size: 60px;
   background-color: black;
 
@@ -82,12 +89,12 @@ header h2 span {
 .tea-of-the-month {
   width:1000px;
   display:flex;
-  flex-direction:column;
-  align-content: space-around;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   text-align: center;
   margin: 0 auto;
-  flex-wrap: wrap;
+  flex-direction:column;
 }
 
 .tom-heading {
@@ -97,21 +104,20 @@ header h2 span {
 }
 
 .items {
-  width:100%;
-  display:flex;
-  align-items: space-around;
-  justify-content: space-around;
+  display:inline-flex;
+  flex-wrap: wrap;
   margin: 0 auto;
+  justify-content: center;
 }
 
 
 
 .items img{
     width:300px;
-    height:300px;
+    height:200px;
     text-align: center;
-    padding:10px;
-    display:inline;
+    padding:15px;
+    display:inline-flex;
     margin: 0 auto;
 
  }
@@ -120,18 +126,20 @@ header h2 span {
  .locations {
  margin-top: 100px;
  display:flex;
- justify-content: ;
  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
  background-repeat: no-repeat;
  background-position: center;
  width: 1200px;
  height:500px;
  flex-direction:column ;
- align-items: center;
  align-content: center ;
  text-align: center;
+
 }
 
+.locations-heading h2 {
+  margin: 0 auto;
+}
 
 
 .addresses {
@@ -139,13 +147,18 @@ header h2 span {
   width:1200px;
   height:500px;
   align-items: center;
-  justify-content:space-around;
+  justify-content:center;
   align-content: center;
-  margin-top: 15px;
+  margin-top: 15px auto;
+  opacity: 1;
+
 
 
 }
 
+ .addresses div {
+   opacity: 1;
+ }
 
 .downtown {
   width:300px;
@@ -154,6 +167,7 @@ header h2 span {
   background-color: black;
   margin: auto;
   padding-top: 20px;
+
 
 
 }
@@ -172,6 +186,7 @@ header h2 span {
   margin: auto;
   padding-top: 20px;
 
+
 }
 
 .eastbayside p {
@@ -188,7 +203,33 @@ header h2 span {
 
 
 
+
 }
 .oakdale p {
   padding: 35px;
+}
+
+
+footer {
+  display:flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+
+  height:200px;
+}
+
+.contact h2 ,
+h5,
+p  {
+  padding:15px;
+
+}
+
+.copyright  {
+  display:block;
+  padding-left: 20px;
+  text-align: left;
 }
